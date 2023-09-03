@@ -27,5 +27,38 @@ header{
 }
 .btn{
   border:2px white;
-  
+  border-radius: 5px;
+  width:75px;
+  height:75px;
+  font-size:50px;
+  font-weight: 500;
+  color:white;
+  cursor:pointer;
+  transition:background-color 0.3s;
+  margin:5px;
+}
+.btn:hover{
+  background-color: rgba(255,255,255,0.5);
+}
+.btn:disabled{
+  color:black;
+  cursor:no-drop;
+}
+.result-container{
+  background-color: rgba(255,255,255,0.7);
+  border: 2px white;
+  width:200px;
+  margin:0 auto;
+  padding:10px;
+}
+#result{
+  font-size:25px;
+
+}
+.reset{
+  text-align:center;
+  margin-top:20px;
+}
+#resetBtn{
+  border:2px black;
 }
