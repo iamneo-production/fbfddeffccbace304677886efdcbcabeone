@@ -53,7 +53,7 @@ function handleButtonClick(event){
     }
 }
 function resetBoard(){
-    gameboard=["","","","","","","","",""];
+    gameBoard=["","","","","","","","",""];
     gameActive=true;
     currentPlayer="X";
     buttons.forEach(button=>{
