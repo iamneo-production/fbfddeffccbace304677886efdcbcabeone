@@ -18,6 +18,12 @@ const winCombos=[
 function checkWinner(){
     for(let combo of winCombos){
         const[a,b,c]=combo;
-        if(gameBoard[a] && gameBoard[a]===gameBoard[b])
+        if(gameBoard[a] && gameBoard[a]===gameBoard[b] && gameBoard[a]===gameBoard[c]){
+            gameActive=false;
+            return gameBoard[a];
+        }
     }
+    if(!gameBoard.includes(""){
+        gameActive
+    })
 }
