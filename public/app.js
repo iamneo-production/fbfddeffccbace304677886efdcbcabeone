@@ -23,7 +23,18 @@ function checkWinner(){
             return gameBoard[a];
         }
     }
-    if(!gameBoard.includes(""){
-        gameActive
-    })
+    if(!gameBoard.includes("")){
+        gameActive=false;
+        return gameBoard[a];
+    }
+    return null;
+}
+function handleButtonClick(event){
+    const index=event.target.id;
+    if(gameBoard[index]==="" && gameActive){
+        gameBoard[index]=currentPlayer;
+        event.target.textContent=currentPlayer;
+        event.target.disabled=true;
+        const
+    }
 }
