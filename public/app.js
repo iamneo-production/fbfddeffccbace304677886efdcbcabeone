@@ -53,5 +53,17 @@ function handleButtonClick(event){
     }
 }
 function resetBoard(){
-    gameboard=["","","","","","",""]
+    gameboard=["","","","","","","","",""];
+    gameActive=true;
+    currentPlayer="X";
+    buttons.forEach(button=>{
+        button.textContent="";
+        button.disabled=false;
+    });
+    resultText.textContent="Player X's turn";
+    resetBtn.disabled=true;
 }
+buttons.forEach(button=>{
+    button.addEventListener("click", handleButtonClick);
+});
+resetBtn.addEventListener("click",resetBoard);
