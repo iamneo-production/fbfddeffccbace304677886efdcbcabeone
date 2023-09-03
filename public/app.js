@@ -35,6 +35,23 @@ function handleButtonClick(event){
         gameBoard[index]=currentPlayer;
         event.target.textContent=currentPlayer;
         event.target.disabled=true;
-        const
+        const winner=checkWinner();
+        if(winner){
+            if(winner==="Draw"){
+                resultText.textContent="It's a Draw!";
+            }
+            else{
+                resultText.textContent=`Player ${winner} wins!`;
+            }
+            resetBtn.disabled=false;
+        
+        }
+        else{
+            currentPlayer=currentPlayer==="X"?"O":"X";
+            resultText.textContent=`Player ${currentPlayer}'s turn`;
+        }
     }
+}
+function resetBoard(){
+    gameboard=["","","","","","",""]
 }
