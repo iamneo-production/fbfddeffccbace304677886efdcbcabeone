@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tic_tac_toe</title>
+  <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Tic Tac Toe</h1>
-    <div id="board" class="board">
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+    <div class="box">
       <div class="cell" onclick="makeMove(0)"></div>
       <div class="cell" onclick="makeMove(1)"></div>
       <div class="cell" onclick="makeMove(2)"></div>
@@ -23,7 +25,8 @@
 
     </div>
     <p id="status" class="status">Player X's turn</p>
-    <button id="reset" class="reset-button"
+    <button id="reset" class="reset-button" onclick="resetBoard()">Reset</button>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
