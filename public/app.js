@@ -41,7 +41,7 @@ function handleButtonClick(event){
                 resultText.textContent="It's a Draw!";
             }
             else{
-                resultText.textContent=`Player ${winner} wins!`;
+                resultText.textContent=`Player ${winner} Won 🎉`;
             }
             resetBtn.disabled=false;
         
