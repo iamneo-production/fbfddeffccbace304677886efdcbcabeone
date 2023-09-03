@@ -25,7 +25,7 @@ function checkWinner(){
     }
     if(!gameBoard.includes("")){
         gameActive=false;
-        return gameBoard[a];
+        return "Draw";
     }
     return null;
 }
